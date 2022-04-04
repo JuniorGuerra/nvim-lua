@@ -7,3 +7,15 @@ end
 mapper("n", "w", ":w<CR>")
 mapper("n", "q", ":q<CR>")
 mapper("n", "tt", ":t.<CR>")
+
+
+
+--
+-- KEYMAP config
+--
+
+mapper("n", "B", ":NvimTreeOpen<CR>")
+
+
+
+
