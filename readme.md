@@ -1,0 +1,1 @@
+Config neovim with lua
