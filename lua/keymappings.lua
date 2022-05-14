@@ -14,8 +14,7 @@ mapper("n", "tt", ":t.<CR>")
 -- KEYMAP config
 --
 
-mapper("n", "B", ":NvimTreeOpen<CR>")
-
+mapper("C", "B", ":NvimTreeOpen<CR>")
 
 
 

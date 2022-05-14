@@ -69,3 +69,13 @@ vim.g.completeopt="menu,menuone,noselect,noinsert"
 
 require'lspconfig'.golangci_lint_ls.setup{}
 require'lspconfig'.gopls.setup{}
+
+--[[
+local runtime_path = vim.split(package.path, ';')
+table.insert(runtime_path, "lua/?.lua")
+table.insert(runtime_path, "lua/?/init.lua")
+require'lspconfig'.sumneko_lua.setup{}
+--]]
+
+
+

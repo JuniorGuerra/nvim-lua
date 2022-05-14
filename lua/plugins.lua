@@ -14,8 +14,16 @@ return require('packer').startup(function()
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+  use 'shaunsingh/nord.nvim'
 
-
+	
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+    config = function() require'nvim-tree'.setup {} end
+  }
 
   use {
   'nvim-telescope/telescope.nvim',
@@ -27,16 +35,9 @@ return require('packer').startup(function()
     opt = true,
     requires = {{'hrsh7th/vim-vsnip', opt = true}, {'hrsh7th/vim-vsnip-integ', opt = true}}
   }
-
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = { 
-	    {'kyazdani42/nvim-web-devicons'} -- optional, for file icon
-  },
-
+  use 'shaunsingh/solarized.nvim'
+  use 'Iron-E/nvim-soluarized'
   use {'dracula/vim', as = 'dracula'}
-
-}
-
+  use 'andweeb/presence.nvim'
 end)
 

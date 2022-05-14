@@ -4,4 +4,6 @@ local wo = vim.wo
 wo.number = true
 o.clipboard = "unnamedplus"
 
-vim.cmd('colorscheme dracula')
+vim.o.background = 'dark'
+
+vim.cmd('colorscheme nord')
