@@ -6,4 +6,10 @@ o.clipboard = "unnamedplus"
 
 vim.o.background = 'dark'
 
-vim.cmd('colorscheme nord')
+-- vim.cmd('colorscheme rvcs')i
+
+vim.cmd[[colorscheme rvcs]]
+--
+
+-- vim.cmd[[colorscheme tokyonight]]
+

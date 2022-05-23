@@ -14,9 +14,12 @@ return require('packer').startup(function()
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
-  use 'shaunsingh/nord.nvim'
 
-	
+  -- Themes of nvim
+  use 'shaunsingh/nord.nvim'
+  use 'shaeinst/roshnivim-cs'
+  use 'folke/tokyonight.nvim'	
+
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
