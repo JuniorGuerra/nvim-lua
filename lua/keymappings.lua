@@ -13,8 +13,8 @@ mapper("n", "tt", ":t.<CR>")
 --
 -- KEYMAP config
 --
-
-mapper("C", "B", ":NvimTreeOpen<CR>")
+mapper("n", "B", ":NvimTreeFocus<CR>")
+mapper("n", "C", ":NvimTreeClose<CR>")
 
 
 

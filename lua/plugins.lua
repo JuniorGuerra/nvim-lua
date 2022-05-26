@@ -1,13 +1,15 @@
 vim.cmd [[packadd packer.nvim]]
+
 require'lspconfig'.pyright.setup{}
+local use = require('packer').use
 
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
-
+  use 'williamboman/nvim-lsp-installer'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
+
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
@@ -19,6 +21,8 @@ return require('packer').startup(function()
   use 'shaunsingh/nord.nvim'
   use 'shaeinst/roshnivim-cs'
   use 'folke/tokyonight.nvim'	
+  -- Using Packer
+  use 'navarasu/onedark.nvim'
 
   use {
     'kyazdani42/nvim-tree.lua',
