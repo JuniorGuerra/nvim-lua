@@ -95,16 +95,9 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["completion-nvim"] = {
-    after = { "vim-vsnip-integ" },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/juniorguerra/.local/share/nvim/site/pack/packer/opt/completion-nvim",
-    url = "https://github.com/haorenW1025/completion-nvim"
-  },
-  dracula = {
     loaded = true,
-    path = "/home/juniorguerra/.local/share/nvim/site/pack/packer/start/dracula",
-    url = "https://github.com/dracula/vim"
+    path = "/home/juniorguerra/.local/share/nvim/site/pack/packer/start/completion-nvim",
+    url = "https://github.com/nvim-lua/completion-nvim"
   },
   ["nord.nvim"] = {
     loaded = true,
@@ -125,11 +118,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/juniorguerra/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-soluarized"] = {
-    loaded = true,
-    path = "/home/juniorguerra/.local/share/nvim/site/pack/packer/start/nvim-soluarized",
-    url = "https://github.com/Iron-E/nvim-soluarized"
   },
   ["nvim-tree.lua"] = {
     config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
@@ -167,11 +155,6 @@ _G.packer_plugins = {
     path = "/home/juniorguerra/.local/share/nvim/site/pack/packer/start/roshnivim-cs",
     url = "https://github.com/shaeinst/roshnivim-cs"
   },
-  ["solarized.nvim"] = {
-    loaded = true,
-    path = "/home/juniorguerra/.local/share/nvim/site/pack/packer/start/solarized.nvim",
-    url = "https://github.com/shaunsingh/solarized.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/juniorguerra/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -186,16 +169,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/juniorguerra/.local/share/nvim/site/pack/packer/start/vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
-  },
-  ["vim-vsnip-integ"] = {
-    after_files = { "/home/juniorguerra/.local/share/nvim/site/pack/packer/opt/vim-vsnip-integ/after/plugin/vsnip_integ.vim" },
-    load_after = {
-      ["completion-nvim"] = true
-    },
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/juniorguerra/.local/share/nvim/site/pack/packer/opt/vim-vsnip-integ",
-    url = "https://github.com/hrsh7th/vim-vsnip-integ"
   }
 }
 

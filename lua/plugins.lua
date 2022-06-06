@@ -9,6 +9,10 @@ return require('packer').startup(function()
   use 'williamboman/nvim-lsp-installer'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/cmp-nvim-lsp'
+  use 'nvim-lua/completion-nvim'
+
+    use 'simrat39/rust-tools.nvim'
+  use 'simrat39/rust-tools.nvim'
 
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
@@ -16,7 +20,6 @@ return require('packer').startup(function()
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
-
   -- Themes of nvim
   use 'shaunsingh/nord.nvim'
   use 'shaeinst/roshnivim-cs'
@@ -36,15 +39,6 @@ return require('packer').startup(function()
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
   }
-
-  use {
-    'haorenW1025/completion-nvim',
-    opt = true,
-    requires = {{'hrsh7th/vim-vsnip', opt = true}, {'hrsh7th/vim-vsnip-integ', opt = true}}
-  }
-  use 'shaunsingh/solarized.nvim'
-  use 'Iron-E/nvim-soluarized'
-  use {'dracula/vim', as = 'dracula'}
-  use 'andweeb/presence.nvim'
+ use 'andweeb/presence.nvim'
 end)
 
